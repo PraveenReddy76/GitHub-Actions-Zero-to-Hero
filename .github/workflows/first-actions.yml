@@ -8,7 +8,8 @@ on: [push]
 # This section defines the jobs (a job is a set of steps to be run)
 jobs:
   build:  # Name of the job
-    runs-on: ubuntu-latest  # The job will run on the latest version of Ubuntu Linux
+    runs-on: self-hosted # the job will run on our own server(like aws ec2) 
+    # ubuntu-latest # The job will run on the latest version of Ubuntu Linux
 
     # This section allows us to run the job using different Python versions
     strategy:
